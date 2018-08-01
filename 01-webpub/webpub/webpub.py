@@ -24,10 +24,7 @@ def list_bucket_objects(bucket):
   for obj in s3.Bucket(bucket).objects.all():
     print(obj)
 
-@cli.command('runGab')
-def run_Gab():
-  '''prints Greeting to Gab'''
-  print("Hello Gabriella, How's your day going?")
+
 
 if __name__ == '__main__':
   cli()
